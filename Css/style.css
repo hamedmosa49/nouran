@@ -1161,3 +1161,45 @@ input:focus {
     opacity: .3;
 
 }
+
+/* إصلاح مشاكل الموبايل */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.book {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.page {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+}
+
+footer {
+    margin-bottom: 0;
+    padding-bottom: 25px;
+}
