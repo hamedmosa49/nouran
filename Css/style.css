@@ -1119,12 +1119,16 @@ input:focus {
 
         padding: 12px 20px;
 
+
+
+    }
+
+    .page-buttons {
         font-size: 15px;
         position: sticky;
         bottom: 0;
         background: #fffafc;
         padding-top: 10px;
-
     }
 
 }
