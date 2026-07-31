@@ -1123,14 +1123,6 @@ input:focus {
 
     }
 
-    .page-buttons {
-        font-size: 15px;
-        position: sticky;
-        bottom: 0;
-        background: #fffafc;
-        padding-top: 10px;
-    }
-
 }
 
 .page::before {
