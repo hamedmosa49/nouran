@@ -13,7 +13,7 @@ function login() {
 
     const pass = document.getElementById("password").value;
 
-    if (user === "Nouran" && pass === "2010") {
+    if (user === "Nouran" && pass === "2010&2008") {
 
         goToPage(2)
 
