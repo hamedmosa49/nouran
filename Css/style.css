@@ -1176,3 +1176,428 @@ input:focus {
     opacity: .3;
 
 }
+
+/* =========================
+   PRIVATE PAGE
+========================= */
+
+.private-page {
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(160deg,
+            #fff0f6,
+            #ffd6e7,
+            #ffc2d1);
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    display: none;
+
+    overflow-y: auto;
+
+    z-index: 20;
+
+}
+
+
+.private-page.show {
+
+    display: block;
+
+    animation: fadePage .6s ease;
+
+}
+
+
+.private-container {
+
+    min-height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+
+.private-icon {
+
+    font-size: 65px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.private-container h1 {
+
+    color: #b83b6d;
+
+    font-size: 32px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.private-message {
+
+    background: rgba(255, 255, 255, .8);
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    color: #666;
+
+    font-size: 17px;
+
+    line-height: 2;
+
+    margin-bottom: 25px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+
+}
+
+
+.private-container input {
+
+    width: 100%;
+
+    padding: 16px;
+
+    border: 2px solid #f3b1ca;
+
+    border-radius: 15px;
+
+    outline: none;
+
+    font-size: 17px;
+
+    text-align: center;
+
+    margin-bottom: 15px;
+
+}
+
+
+.private-container input:focus {
+
+    border-color: #e75480;
+
+    box-shadow: 0 0 15px rgba(231, 84, 128, .3);
+
+}
+
+
+.private-container button {
+
+    width: 100%;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: #e75480;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+
+.private-container button:hover {
+
+    transform: scale(1.03);
+
+}
+
+
+#privateError {
+
+    color: #d62828;
+
+    font-weight: bold;
+
+    margin-top: 15px;
+
+}
+
+
+.private-content {
+
+    position: absolute;
+
+    inset: 0;
+
+    display: none;
+
+    background: linear-gradient(160deg,
+            #fff6fa,
+            #ffe3ee);
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    overflow-y: auto;
+
+    z-index: 25;
+
+}
+
+
+.private-content.show {
+
+    display: block;
+
+    animation: fadePage .6s ease;
+
+}
+
+
+.private-card {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .12);
+
+    text-align: center;
+
+    margin-top: 30px;
+
+}
+
+
+.private-card h2 {
+
+    color: #c84b7a;
+
+    margin-bottom: 20px;
+
+}
+
+
+.private-card p {
+
+    color: #555;
+
+    line-height: 2.2;
+
+    font-size: 18px;
+
+}
+
+
+/* زرار صفحة خاصة */
+
+.private-page-btn {
+
+    background: #8e44ad !important;
+
+    margin-top: 5px;
+
+}
+
+/* =========================
+   PRIVATE PAGE
+========================= */
+
+.private-page {
+
+    background:
+        linear-gradient(160deg,
+            #fff0f6,
+            #ffd6e7,
+            #ffeaf2);
+
+    color: #555;
+
+    padding: 25px;
+
+}
+
+
+/* Header */
+
+.private-header {
+
+    text-align: center;
+
+    margin-bottom: 25px;
+
+}
+
+.private-header h1 {
+
+    color: #b83b6d;
+
+    font-size: 32px;
+
+    margin-bottom: 10px;
+
+}
+
+.private-header hr {
+
+    width: 80px;
+
+    height: 4px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background: #e75480;
+
+    margin: auto;
+
+}
+
+
+/* Intro */
+
+.private-intro {
+
+    background: rgba(255, 255, 255, .85);
+
+    border-radius: 22px;
+
+    padding: 22px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, .10);
+
+    border: 1px solid #ffd0df;
+
+}
+
+.private-intro p {
+
+    color: #666;
+
+    font-size: 17px;
+
+    line-height: 2;
+
+    text-align: center;
+
+}
+
+
+/* Today's message */
+
+.today-message {
+
+    background: white;
+
+    border-radius: 25px;
+
+    padding: 22px;
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, .12);
+
+}
+
+.today-message h2 {
+
+    text-align: center;
+
+    color: #c84b7a;
+
+    font-size: 25px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* Empty message area */
+
+.message-box {
+
+    min-height: 240px;
+
+    border-radius: 18px;
+
+    border: 2px dashed #f2aac4;
+
+    background: #fffafd;
+
+    padding: 20px;
+
+}
+
+
+/* Button */
+
+.private-button {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 30px;
+
+}
+
+.private-button button {
+
+    border: none;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    background: #e75480;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 20px rgba(231, 84, 128, .3);
+
+    transition: .3s;
+
+}
+
+.private-button button:hover {
+
+    transform: translateY(-3px);
+
+    background: #d63d6d;
+
+}

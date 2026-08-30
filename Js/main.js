@@ -61,3 +61,65 @@ media.forEach(current => {
     });
 
 });
+// =========================
+// PRIVATE PAGE
+// =========================
+
+function openPrivatePage() {
+
+    const privatePage =
+        document.getElementById("privatePage");
+
+    privatePage.classList.add("show");
+
+}
+
+
+function checkPrivatePassword() {
+
+    const password =
+        document.getElementById("privatePassword").value;
+
+    const correctPassword = "Love";
+
+    const error =
+        document.getElementById("privateError");
+
+    const privatePage =
+        document.getElementById("privatePage");
+
+    const privateContent =
+        document.getElementById("privateContent");
+
+
+    if (password === correctPassword) {
+
+        error.textContent = "";
+
+        privatePage.classList.remove("show");
+
+        privateContent.classList.add("show");
+
+    }
+
+    else {
+
+        error.textContent =
+            "كلمة السر غلط 🙃 جربي تاني";
+
+    }
+
+}
+function backToMain() {
+
+    document
+        .querySelectorAll(".page")
+        .forEach(page => {
+            page.classList.remove("active");
+        });
+
+    document
+        .querySelector(".page2")
+        .classList.add("active");
+
+}
